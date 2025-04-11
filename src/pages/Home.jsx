@@ -3,7 +3,6 @@ import bgImage from '../assets/home_background_image.png';
 import GalleryElement from '../components/galleryElement';
 import data from '../assets/data.json'
 
-console.log(data)
 function Home() {
 
     return (
@@ -14,7 +13,7 @@ function Home() {
             </div>
             <div id='home__gallery'>
                 {data.map((logement) => (
-                    <GalleryElement key={logement.id} cover={logement.cover} title={logement.title} />
+                    <GalleryElement key={logement.id} id={logement.id} cover={logement.cover} title={logement.title} />
                 ))}
             </div>
         </div>
