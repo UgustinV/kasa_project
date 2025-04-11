@@ -3,9 +3,7 @@ import '../style/Home.scss'
 function NotFound() {
 
   return (
-    <div>
-      404 Not found
-    </div>
+    <div>404 : Not Found</div>
   )
 }
 

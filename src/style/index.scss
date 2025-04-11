@@ -1,0 +1,19 @@
+@mixin fullscreen {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    @include fullscreen;
+    margin: 0;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#root{
+    @include fullscreen;
+    align-items: center;
+}
