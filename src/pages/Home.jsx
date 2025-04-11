@@ -1,19 +1,26 @@
 import '../style/Home.scss'
 import bgImage from '../assets/home_background_image.png';
 import GalleryElement from '../components/galleryElement';
+import TopImage from '../components/topImage';
 import data from '../assets/data.json'
 
 function Home() {
 
     return (
         <div id='home'>
-            <div id='home__title'>
-                <img src={bgImage} alt="" />
-                <p>Chez vous, partout et ailleurs</p>
-            </div>
+            <TopImage
+                image={bgImage}
+                alt="Paysage de montagne"
+                text="Chez vous, partout et ailleurs"
+            />
             <div id='home__gallery'>
                 {data.map((logement) => (
-                    <GalleryElement key={logement.id} id={logement.id} cover={logement.cover} title={logement.title} />
+                    <GalleryElement
+                        key={logement.id}
+                        id={logement.id}
+                        cover={logement.cover}
+                        title={logement.title}
+                    />
                 ))}
             </div>
         </div>

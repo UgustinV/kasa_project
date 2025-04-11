@@ -1,0 +1,22 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    justify-content: center;
+    align-items: center;
+    #about__dropdown{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 1023px;
+    }
+}
+
+@media (max-width: 940px){
+    #about{
+        gap: 20px;
+        #about__dropdown{
+            gap: 20px;
+        }
+    }
+}

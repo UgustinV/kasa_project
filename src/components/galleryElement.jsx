@@ -1,13 +1,18 @@
-import { NavLink } from "react-router";
+import { Link } from "react-router";
+import "../style/components/GalleryElement.scss";
 
 function GalleryElement({ cover, title, id }) {
-    const redirectLink = `/logement?id=${id}`;
     return (
         <div className="gallery__element">
-            <NavLink to={redirectLink} end>
-                <img src={cover} alt={title} />
-                <h2>{title}</h2>
-            </NavLink>
+            <Link to={{
+                pathname: "/logement",
+                search: "?id=" + id
+            }}>
+                <div className="gallery__element__container">
+                    <img src={cover} alt={title} />
+                    <h2>{title}</h2>
+                </div>
+            </Link>
         </div>
     );
 }
