@@ -17,9 +17,13 @@ $mobile-font-size: 12px;
             font-size: $desktop-font-size;
             width: 210px;
         }
+        .active{
+            text-decoration: underline;
+        }
         a{
             text-decoration: none;
             color: black;
+            font-size: $desktop-font-size;
         }
         nav{
             @include flex-flexDir(row);
