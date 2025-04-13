@@ -1,4 +1,4 @@
-import '../style/Home.scss'
+import '../style/pages/Home.scss'
 
 function Logement() {
   return (

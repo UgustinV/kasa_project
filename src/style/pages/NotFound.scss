@@ -1,0 +1,45 @@
+$color: #FF6060;
+
+#not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 139px;
+    margin: 89px 0;
+    h1{
+        margin: 0;
+        font-size: 288px;
+        font-weight: 700;
+        color: $color;
+    }
+    h2{
+        margin: 0;
+        font-size: 36px;
+        font-weight: 500;
+        color: $color;
+    }
+    a{
+        font-size: 18px;
+        color: black;
+    }
+}
+
+@media (max-width: 940px){
+    #not-found{
+        gap: 113px;
+        margin: 86px 0;
+        h1{
+            font-size: 96px;
+        }
+        h2{
+            font-size: 18px;
+            text-align: center;
+            text-wrap: balance;
+        }
+        a{
+            font-size: 14px;
+        }
+    }
+}
