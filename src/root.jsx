@@ -10,7 +10,7 @@ import Layout from './components/layout.jsx';
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename='/kasa_project'>
             <Layout>
                 <Routes>
                     <Route path="/" element={<Home />} />
