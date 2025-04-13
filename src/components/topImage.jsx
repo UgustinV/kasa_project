@@ -1,4 +1,4 @@
-import '../style/components/TopImage.scss';
+import '../style/components/topImage.scss';
 
 function TopImage({ image, alt, text=null }) {
     if(!text) {
