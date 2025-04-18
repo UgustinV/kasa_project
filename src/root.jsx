@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')).render(
                     <Route path="/about" element={<About />} />
                     <Route path="/logement" element={<Logement data={data}/>} />
                     <Route path="/not-found" element={<NotFound />} />
-                    <Route path="*" element={<Navigate replace to="/not-found" />} />
+                    <Route path="/*" element={<Navigate replace to="/not-found" />} />
                 </Routes>
             </Layout>
         </BrowserRouter>
