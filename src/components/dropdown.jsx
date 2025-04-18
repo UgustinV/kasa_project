@@ -19,10 +19,10 @@ function Dropdown({ title, content }){
                 <img className={hasInteracted ? isOpen ? "rotate-down" : "rotate-up" : ""} src={arrow} alt="arrow" />
             </div>
             <div className="dropdown__content__wrapper" ref={contentHeight} style={
-          isOpen
-          ? { height: contentHeight.current.scrollHeight }
-          : { height: "0" }
-         }>
+                isOpen
+                ? { height: contentHeight.current.scrollHeight }
+                : { height: "0" }
+            }>
                 <div>
                     <p>{content}</p>
                 </div>
