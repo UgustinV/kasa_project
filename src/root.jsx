@@ -11,13 +11,14 @@ import data from './assets/data.json'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter basename='/kasa_project/'>
+        <BrowserRouter basename='/kasa_project'>
             <Layout>
-                <Routes path="/kasa_project">
+                <Routes>
                     <Route path="/" element={<Home data={data} />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/logement" element={<Logement data={data}/>} />
-                    <Route path="*" element={<NotFound />} />
+                    <Route path="/not-found" element={<NotFound />} />
+                    <Route path="*" element={<Navigate replace to="/not-found" />} />
                 </Routes>
             </Layout>
         </BrowserRouter>
