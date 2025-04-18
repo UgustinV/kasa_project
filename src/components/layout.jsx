@@ -13,8 +13,8 @@ function Layout({children}) {
                         <img id="kasa-logo" src={kasaLogo} alt="kasa-logo" />
                     </NavLink>
                     <nav>
-                        <NavLink to="/" end>ACCUEIL</NavLink>
-                        <NavLink to="/about" end>A PROPOS</NavLink>
+                        <NavLink to="/" end>Accueil</NavLink>
+                        <NavLink to="/about" end>A Propos</NavLink>
                     </nav>
                 </header>
             <main>

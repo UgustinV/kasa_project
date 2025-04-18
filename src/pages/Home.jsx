@@ -2,9 +2,8 @@ import '../style/pages/Home.scss'
 import bgImage from '../assets/home_background_image.png';
 import GalleryElement from '../components/galleryElement';
 import TopImage from '../components/topImage';
-import data from '../assets/data.json'
 
-function Home() {
+function Home({data}) {
 
     return (
         <div id='home'>

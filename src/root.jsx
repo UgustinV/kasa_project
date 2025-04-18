@@ -7,15 +7,16 @@ import About from './pages/About.jsx';
 import Logement from './pages/Logement.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Layout from './components/layout.jsx';
+import data from './assets/data.json'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <BrowserRouter basename='/kasa_project'>
             <Layout>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home data={data} />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/logement" element={<Logement />} />
+                    <Route path="/logement" element={<Logement data={data}/>} />
                     <Route path="/not-found" element={<NotFound />} />
                     <Route path="*" element={<Navigate replace to="/not-found" />} />
                 </Routes>
