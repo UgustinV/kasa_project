@@ -4,10 +4,7 @@ import "../style/components/galleryElement.scss";
 function GalleryElement({ cover, title, id }) {
     return (
         <div className="gallery__element">
-            <Link to={{
-                pathname: "/logement",
-                search: "?id=" + id
-            }}>
+            <Link to={"/logement/"+ id}>
                 <div className="gallery__element__container">
                     <img src={cover} alt={title} />
                     <h2>{title}</h2>

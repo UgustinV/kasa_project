@@ -24,7 +24,7 @@ function Dropdown({ title, content }){
                 : { height: "0" }
             }>
                 <div>
-                    <p>{content}</p>
+                    {content}
                 </div>
             </div>
         </div>

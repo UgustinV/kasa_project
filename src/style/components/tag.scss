@@ -1,0 +1,16 @@
+.tag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 95px;
+    background-color: #FF6060;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    p{
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0;
+    }
+}
