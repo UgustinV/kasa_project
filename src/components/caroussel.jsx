@@ -46,17 +46,27 @@ function Caroussel({ pictures }) {
     };
 
     useEffect(() => {
-        // Initial display
         setDisplayedImages([createImage(pictures[0], 0, "")]);
     }, []);
 
     return (
         <div id="caroussel">
-            <div className="caroussel__container">
-            <img id="prev" className="skip-button" src={prevPic} alt="Previous image button" onClick={handlePrevClick} />
-                {displayedImages}
-            <img id="next" className="skip-button" src={nextPic} alt="Next image button" onClick={handleNextClick} />
-            </div>
+            {pictures.length > 1 && 
+                <div className="caroussel__container">
+                    <img id="prev" className="skip-button" src={prevPic} alt="Previous image button" onClick={handlePrevClick} />
+                        {displayedImages}
+                    <img id="next" className="skip-button" src={nextPic} alt="Next image button" onClick={handleNextClick} />
+                </div>
+            }
+            {displayedImages.length === 1 && 
+                <div className="caroussel__container">
+                    <img
+                        src={pictures[0]}
+                        alt={`Image 1`}
+                        className={`caroussel__image`}
+                    />
+                </div>
+            }
         </div>
     );
 }
