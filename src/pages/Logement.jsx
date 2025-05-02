@@ -3,23 +3,14 @@ import DropDown from '../components/dropdown'
 import Tag from '../components/tag';
 import Rating from '../components/rating';
 
-import { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router'
+import { useParams } from 'react-router'
 
 
 import Caroussel from '../components/caroussel';
 
 function Logement({ data }) {
     const { id } = useParams();
-    const navigate = useNavigate();
     const logement = data.find(item => item.id === id);
-
-    useEffect(() => {
-        const logement = data.find(item => item.id === id)
-        if (!logement) {
-            navigate('/not-found')
-        }
-    }, [id, data, navigate]);
 
     return (
         <div id='logement'>

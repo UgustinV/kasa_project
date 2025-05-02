@@ -54,7 +54,10 @@ function Caroussel({ pictures }) {
             {pictures.length > 1 && 
                 <div className="caroussel__container">
                     <img id="prev" className="skip-button" src={prevPic} alt="Previous image button" onClick={handlePrevClick} />
-                        {displayedImages}
+                    {displayedImages}
+                    <div id="caroussel__counter">
+                        <span>{currentIndex + 1 + "/" + pictures.length}</span>
+                    </div>
                     <img id="next" className="skip-button" src={nextPic} alt="Next image button" onClick={handleNextClick} />
                 </div>
             }
@@ -62,8 +65,8 @@ function Caroussel({ pictures }) {
                 <div className="caroussel__container">
                     <img
                         src={pictures[0]}
-                        alt={`Image 1`}
-                        className={`caroussel__image`}
+                        alt="Image 1"
+                        className="caroussel__image"
                     />
                 </div>
             }
