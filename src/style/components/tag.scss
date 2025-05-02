@@ -14,3 +14,14 @@
         margin: 0;
     }
 }
+
+@media (max-width: 940px) {
+    .tag{
+        min-width: 84px;
+        border-radius: 5px;
+        padding: 2px 4px;
+        p{
+            font-size: 10px;
+        }
+    }
+}

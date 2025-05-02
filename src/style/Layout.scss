@@ -14,7 +14,6 @@ $mobile-font-size: 12px;
         justify-content: space-between;
         align-items: center;
         #kasa-logo{
-            font-size: $desktop-font-size;
             width: 210px;
         }
         .active{
@@ -80,6 +79,19 @@ footer{
         p{
             font-size: $mobile-font-size;
             width: 100px;
+        }
+    }
+}
+
+@media (max-width: 350px){
+    #header-main{
+        header{
+            #kasa-logo{
+                width: 110px;
+            }
+            nav{
+                gap: 20px
+            }
         }
     }
 }

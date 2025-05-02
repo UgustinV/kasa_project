@@ -24,11 +24,19 @@ function Logement({ data }) {
     return (
         <div id='logement'>
             <Caroussel pictures={logement.pictures} />
-            <div id='primary-infos'>
-                <div id='title'>
-                    <h1>{logement.title}</h1>
-                    <h2>{logement.location}</h2>
+            <div id="infos">
+                <div id='primary-infos'>
+                    <div id='title'>
+                        <h1>{logement.title}</h1>
+                        <h2>{logement.location}</h2>
+                    </div>
+                    <div id='tags'>
+                        {logement.tags.map((tag) => {
+                            return <Tag key={tag} name={tag} />
+                        })}
+                    </div>
                 </div>
+                <div id='secondary-infos'>
                     <div id='host'>
                         <div>
                             {logement.host.name.split(' ').map((name, index) => {
@@ -37,14 +45,8 @@ function Logement({ data }) {
                         </div>
                         <img src={logement.host.picture} alt={"Photo de profil de " + logement.host.name} />
                     </div>
-            </div>
-            <div id='secondary-infos'>
-                <div id='tags'>
-                    {logement.tags.map((tag) => {
-                        return <Tag key={tag} name={tag} />
-                    })}
+                    <Rating redStars={parseInt(logement.rating)} />
                 </div>
-                <Rating redStars={parseInt(logement.rating)} />
             </div>
             <div id='accordions'>
                 <DropDown title="Description" content={logement.description} />
