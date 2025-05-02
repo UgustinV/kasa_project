@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import "../style/components/galleryElement.scss";
 
 function GalleryElement({ cover, title, id }) {
     return (

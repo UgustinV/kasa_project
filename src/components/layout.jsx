@@ -1,4 +1,3 @@
-import '../style/Layout.scss'
 import { NavLink } from "react-router";
 import footerLogo from '../assets/footer-logo.svg';
 import kasaLogo from '../assets/kasa-logo.svg';

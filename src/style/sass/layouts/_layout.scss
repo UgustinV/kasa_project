@@ -1,9 +1,6 @@
+@use "../utils/mixins" as *;
 $desktop-font-size: 24px;
 $mobile-font-size: 12px;
-@mixin flex-flexDir($direction) {
-    display: flex;
-    flex-direction: $direction;
-}
 
 #header-main{
     max-width: 1440px;

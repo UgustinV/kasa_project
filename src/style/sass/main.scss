@@ -1,4 +1,20 @@
+@use"./components/caroussel";
+@use "./components/dropdown";
+@use "./components/galleryElement";
+@use "./components/rating";
+@use "./components/tag";
+@use "./components/topImage";
+
+@use "./pages/about";
+@use "./pages/home";
+@use "./pages/logement";
+@use "./pages/notFound";
+
+@use "./layouts/layout";
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 
 @mixin fullscreen {
     display: flex;

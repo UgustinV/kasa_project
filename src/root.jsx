@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router";
-import './style/index.scss';
+import './style/sass/main.scss';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import LogementWrapper from './components/logementWrapper.jsx';

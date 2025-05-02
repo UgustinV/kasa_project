@@ -1,3 +1,6 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as *;
+
 .dropdown{
     width: 100%;
     border-radius: 5px;
@@ -11,11 +14,10 @@
         color: white;
         height: 32px;
         border-radius: 10px;
-        display: flex;
-        flex-direction: row;
+        @include flex-flexDir(row);
         justify-content: space-between;
         align-items: center;
-        background-color: #ff6060;
+        background-color: vars.$main-color;
         .rotate-down{
             animation: rotate_down 0.2s ease-in-out;
             animation-fill-mode: forwards;
@@ -30,9 +32,9 @@
         background-color: #FBFBFB;
         overflow: hidden;
         transition: height 0.2s ease-in-out;
-        margin-top: -10px;
-        padding-top: 10px;
-        border-radius: 10px;
+        margin-top: -30px;
+        padding-top: 30px;
+        border-radius: 12px;
         div{
             color: black;
             font-weight: 400;

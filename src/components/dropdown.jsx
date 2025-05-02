@@ -1,5 +1,4 @@
 import arrow from '../assets/dropdown-arrow.svg';
-import '../style/components/dropdown.scss';
 import { useRef, useState } from 'react';
 
 

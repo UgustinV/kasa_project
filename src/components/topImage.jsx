@@ -1,5 +1,3 @@
-import '../style/components/topImage.scss';
-
 function TopImage({ image, alt, text=null }) {
     if(!text) {
         return(

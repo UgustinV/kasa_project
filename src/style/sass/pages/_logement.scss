@@ -1,23 +1,23 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as *;
+
 #logement{
     width: 100%;
     #accordions{
-        display: flex;
-        flex-direction: row;
+        @include flex-flexDir(row);
         gap: 76px;
         margin-top: 24px;
     }
     #infos{
-        display: flex;
-        flex-direction: row;
+        @include flex-flexDir(row);
         justify-content: space-between;
         #primary-infos{
-            display: flex;
-            flex-direction: column;
+            @include flex-flexDir(column);
             justify-content: space-between;
             #title{
                 h1{
                     font-size: 36px;
-                    color: #FF6060;
+                    color: vars.$main-color;
                     font-weight: 500;
                     margin: 5px 0;
                 }
@@ -28,25 +28,22 @@
                 }
             }
             #tags{
-                display: flex;
-                flex-direction: row;
+                @include flex-flexDir(row);
                 flex-wrap: wrap;
                 gap: 10px;
                 margin: 20px 0 24px 0;
             }
         }
         #secondary-infos{
-            display: flex;
-            flex-direction: column;
+            @include flex-flexDir(column);
             align-items: center;
             #host{
-                display: flex;
-                flex-direction: row;
+                @include flex-flexDir(row);
                 align-items: center;
                 gap: 10px;
                 div{
                     p{
-                        color: #FF6060;
+                        color: vars.$main-color;
                         font-size: 18px;
                         font-weight: 500;
                         word-spacing: 600vh;
@@ -77,8 +74,7 @@
             flex-direction: column;
             justify-content: space-between;
             #primary-infos{
-                display: flex;
-                flex-direction: column;
+                @include flex-flexDir(column);
                 justify-content: space-between;
                 #title{
                     h1{

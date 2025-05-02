@@ -1,5 +1,3 @@
-import "../style/components/tag.scss";
-
 function Tag({ name }) {
     return (
         <div className="tag">

@@ -1,9 +1,11 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as *;
+
 .tag{
-    display: flex;
-    flex-direction: row;
+    @include flex-flexDir(row);
     justify-content: center;
     min-width: 95px;
-    background-color: #FF6060;
+    background-color: vars.$main-color;
     width: fit-content;
     padding: 5px 10px;
     border-radius: 10px;

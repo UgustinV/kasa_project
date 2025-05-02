@@ -1,4 +1,3 @@
-import '../style/pages/Logement.scss'
 import DropDown from '../components/dropdown'
 import Tag from '../components/tag';
 import Rating from '../components/rating';

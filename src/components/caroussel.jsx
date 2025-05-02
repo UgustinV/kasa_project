@@ -1,6 +1,5 @@
 import prevPic from "../assets/prev-pic.svg";
 import nextPic from "../assets/next-pic.svg";
-import "../style/components/caroussel.scss";
 import { useEffect, useState } from "react";
 
 function Caroussel({ pictures }) {

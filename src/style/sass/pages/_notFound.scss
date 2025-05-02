@@ -1,8 +1,9 @@
+@use "../utils/mixins" as *;
+
 $color: #FF6060;
 
 #not-found{
-    display: flex;
-    flex-direction: column;
+    @include flex-flexDir(column);
     justify-content: center;
     align-items: center;
     width: 100%;

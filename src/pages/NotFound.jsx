@@ -1,4 +1,3 @@
-import '../style/pages/NotFound.scss'
 import { NavLink } from "react-router";
 
 

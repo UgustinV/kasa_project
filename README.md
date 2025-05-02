@@ -10,6 +10,7 @@ Les élément de développement mis à disposition sont une fiche de contraintes
 
 ## Utilisation
 Le site est déployé sur **Vercel** (beaucoup plus adapté à React Router que Github Pages).
+
 Il est consultable en suivant **<a href="https://kasa-project-pnb4.vercel.app/" target="_blank">CE LIEN</a>**
 > Github Pages a posé énormément de problèmes concernant les redirections vers la page 404 du site
 

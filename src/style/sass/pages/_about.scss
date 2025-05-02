@@ -1,12 +1,12 @@
+@use "../utils/mixins" as *;
+
 #about{
-    display: flex;
-    flex-direction: column;
+    @include flex-flexDir(column);
     gap: 38px;
     justify-content: center;
     align-items: center;
     #about__dropdown{
-        display: flex;
-        flex-direction: column;
+        @include flex-flexDir(column);
         gap: 30px;
         max-width: 1023px;
     }

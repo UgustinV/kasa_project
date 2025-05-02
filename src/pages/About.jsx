@@ -1,7 +1,6 @@
 import Dropdown from '../components/dropdown'
 import TopImage from '../components/topImage'
 import bgImage from '../assets/about_background_image.png';
-import '../style/pages/About.scss'
 
 function About() {
   return (
