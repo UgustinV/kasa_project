@@ -11,7 +11,7 @@ import data from './assets/data.json'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <BrowserRouter basename='/kasa_project'>
+        <BrowserRouter basename='/'>
             <Layout>
                 <Routes>
                     <Route path="/" element={<Home data={data} />} />
